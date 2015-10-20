@@ -1,0 +1,92 @@
+﻿<html>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BÜFK Rezervasyon</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="form_css.css">
+    </head>
+    <body>
+
+      <form action="reservation4.php" method="post">
+      
+        <h1>BÜFK Rezervasyon</h1>
+		<h2>Denizden Gelen</h2>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Kişisel Bilgiler</legend>
+          <label for="name">İsim:</label>
+          <input type="text" id="name" name="name" required>
+          
+		  <label for="surname">Soyisim:</label>
+          <input type="text" id="surname" name="surname">
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="email" required>
+		  
+		  <label for="phone">Telefon:</label>
+          <input type="text" id="phone" name="phone" maxlength="11" placeholder="05*********" required>
+          
+        </fieldset>
+        
+        <fieldset>
+          <legend><span class="number">2</span>Rezervasyon Bilgileri</legend>
+		  
+			  <label>Gösteri Tarihi:</label>
+			  <input type="radio" id="may10" value="2015-05-10" name="showdate"><label for="may10" class="light">10 Mayıs 2015 ~ 18.00</label><br><br>
+			  
+				Tam Bilet Sayısı: <select name="numof_full" required>
+					<option value="0">Tam Bilet</option>
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</select><br>
+				Öğrenci Bileti Sayısı: <select name="numof_student" required>
+					<option value="0">Öğrenci Bileti</option>
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</select>
+			  
+        </fieldset>
+        <button type="submit">Rezervasyonu Tamamla!</button>
+      </form>
+      
+    </body>
+</html>
